@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deflectly — Terms of Service</title>
+  <meta name="description" content="Terms of Service for Deflectly." />
+  <meta property="og:title" content="Deflectly — Terms of Service" />
+  <meta property="og:description" content="Terms of Service for Deflectly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<header class="sticky top-0 z-40 backdrop-blur supports-backdrop-blur:bg-white/70 bg-white/80 border-b">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-2 font-semibold tracking-tight">
+      <img src="/assets/logo.svg" alt="Deflectly" class="h-6 w-6" />
+      <span>Deflectly</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="/index.html#how" class="hover:text-brand-600">How it works</a>
+      <a href="/index.html#pricing" class="hover:text-brand-600">Pricing</a>
+      <a href="/case-study.html" class="hover:text-brand-600">Case study</a>
+      <a href="/privacy.html" class="hover:text-brand-600">Privacy</a>
+      <a href="/terms.html" class="hover:text-brand-600">Terms</a>
+    </nav>
+    <a href="/index.html#pilot" class="rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Start pilot</a>
+  </div>
+</header>
+
+<main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
+  <h1 class="text-3xl font-extrabold tracking-tight">Terms of Service</h1>
+  <p class="mt-4 text-slate-700">Effective date: <span id="date"></span></p>
+
+  <h2 class="mt-8 text-xl font-bold">1. Services</h2>
+  <p class="mt-2 text-slate-700">Deflectly provides AI‑assisted customer support and sales automation. Pilots are short trials to demonstrate value before monthly subscription.</p>
+
+  <h2 class="mt-6 text-xl font-bold">2. Client responsibilities</h2>
+  <ul class="mt-2 list-disc list-inside text-slate-700 space-y-2">
+    <li>Provide accurate policies, FAQs, and escalation rules.</li>
+    <li>Ensure lawful use of data, including customer communications.</li>
+    <li>Promptly review escalations and policy gaps flagged by the assistant.</li>
+  </ul>
+
+  <h2 class="mt-6 text-xl font-bold">3. Acceptable use & disclosure</h2>
+  <p class="mt-2 text-slate-700">The assistant is presented as a brand AI assistant, not a human individual, and avoids clinical, legal, or financial advice. Sensitive topics are escalated.</p>
+
+  <h2 class="mt-6 text-xl font-bold">4. Fees & billing</h2>
+  <p class="mt-2 text-slate-700">Fees are listed on the website. Pilots may convert to monthly plans unless canceled before the renewal date. Taxes and payment processor fees may apply.</p>
+
+  <h2 class="mt-6 text-xl font-bold">5. Data & confidentiality</h2>
+  <p class="mt-2 text-slate-700">We keep client data confidential and use it only to provide the services. See our Privacy Policy for details on processing and retention.</p>
+
+  <h2 class="mt-6 text-xl font-bold">6. Warranties & limitation of liability</h2>
+  <p class="mt-2 text-slate-700">Services are provided “as is.” To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages. Our aggregate liability shall not exceed the fees paid in the 3 months preceding the claim.</p>
+
+  <h2 class="mt-6 text-xl font-bold">7. Term & termination</h2>
+  <p class="mt-2 text-slate-700">Subscriptions are month‑to‑month unless otherwise agreed. Either party may terminate with notice. Sections relating to fees due, confidentiality, and limitation of liability survive termination.</p>
+
+  <h2 class="mt-6 text-xl font-bold">8. Changes</h2>
+  <p class="mt-2 text-slate-700">We may update these terms. Continued use after posting indicates acceptance. For material changes, we will notify active clients.</p>
+
+  <h2 class="mt-6 text-xl font-bold">9. Contact</h2>
+  <p class="mt-2 text-slate-700">Questions? Contact <a class="underline" href="mailto:legal@deflectly.com">legal@deflectly.com</a>.</p>
+</main>
+
+  <footer class="py-10 text-sm text-slate-500 border-t bg-white/60">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Deflectly — All rights reserved.</p>
+      <p><a class="hover:text-slate-700" href="/privacy.html">Privacy</a> • <a class="hover:text-slate-700" href="/terms.html">Terms</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<script>document.getElementById('date').textContent = new Date().toLocaleDateString();</script>

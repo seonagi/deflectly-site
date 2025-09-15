@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deflectly — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Deflectly." />
+  <meta property="og:title" content="Deflectly — Privacy Policy" />
+  <meta property="og:description" content="Privacy Policy for Deflectly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81'}
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+<header class="sticky top-0 z-40 backdrop-blur supports-backdrop-blur:bg-white/70 bg-white/80 border-b">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-2 font-semibold tracking-tight">
+      <img src="/assets/logo.svg" alt="Deflectly" class="h-6 w-6" />
+      <span>Deflectly</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="/index.html#how" class="hover:text-brand-600">How it works</a>
+      <a href="/index.html#pricing" class="hover:text-brand-600">Pricing</a>
+      <a href="/case-study.html" class="hover:text-brand-600">Case study</a>
+      <a href="/privacy.html" class="hover:text-brand-600">Privacy</a>
+      <a href="/terms.html" class="hover:text-brand-600">Terms</a>
+    </nav>
+    <a href="/index.html#pilot" class="rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Start pilot</a>
+  </div>
+</header>
+
+<main class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16">
+  <h1 class="text-3xl font-extrabold tracking-tight">Privacy Policy</h1>
+  <p class="mt-4 text-slate-700">Effective date: <span id="date"></span></p>
+
+  <h2 class="mt-8 text-xl font-bold">Who we are</h2>
+  <p class="mt-2 text-slate-700">Deflectly ("we","us") provides AI‑assisted customer support and sales automation services.</p>
+
+  <h2 class="mt-6 text-xl font-bold">What we collect</h2>
+  <ul class="mt-2 list-disc list-inside text-slate-700 space-y-2">
+    <li>Contact information (name, email, phone) when you submit forms or book.</li>
+    <li>Website analytics (aggregated, non‑identifying) to improve performance.</li>
+    <li>Support conversation data and FAQs provided by clients to power the AI.</li>
+  </ul>
+
+  <h2 class="mt-6 text-xl font-bold">How we use data</h2>
+  <ul class="mt-2 list-disc list-inside text-slate-700 space-y-2">
+    <li>To deliver and improve our services (e.g., generate knowledge bases, answer customer questions).</li>
+    <li>To measure outcomes (deflection %, response time, bookings).</li>
+    <li>To communicate with you about pilots, subscriptions, and updates.</li>
+  </ul>
+
+  <h2 class="mt-6 text-xl font-bold">Data processors</h2>
+  <p class="mt-2 text-slate-700">We use reputable providers for hosting, forms, chat, scheduling, and payments. Where applicable, we execute Data Processing Agreements and configure retention and access controls.</p>
+
+  <h2 class="mt-6 text-xl font-bold">AI usage disclosure</h2>
+  <p class="mt-2 text-slate-700">Our assistants are clearly identified as AI. They operate on client‑approved data and escalate sensitive or uncertain queries to humans. We do not allow clinical, legal, or financial advice.</p>
+
+  <h2 class="mt-6 text-xl font-bold">Data retention</h2>
+  <p class="mt-2 text-slate-700">Client data used for pilots is retained only for the duration of the pilot plus a short grace period, unless you continue as a subscriber. You may request deletion at any time.</p>
+
+  <h2 class="mt-6 text-xl font-bold">Your rights</h2>
+  <p class="mt-2 text-slate-700">You may access, correct, export, or delete your personal data by contacting <a class="underline" href="mailto:privacy@deflectly.com">privacy@deflectly.com</a>.</p>
+
+  <h2 class="mt-6 text-xl font-bold">Security</h2>
+  <p class="mt-2 text-slate-700">We apply least‑privilege access, encryption in transit, and regular permission audits. Please protect any API keys or credentials you share during setup.</p>
+
+  <h2 class="mt-6 text-xl font-bold">Changes</h2>
+  <p class="mt-2 text-slate-700">We may update this policy from time to time. We will update the effective date and, for material changes, notify active clients.</p>
+</main>
+
+  <footer class="py-10 text-sm text-slate-500 border-t bg-white/60">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Deflectly — All rights reserved.</p>
+      <p><a class="hover:text-slate-700" href="/privacy.html">Privacy</a> • <a class="hover:text-slate-700" href="/terms.html">Terms</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<script>document.getElementById('date').textContent = new Date().toLocaleDateString();</script>
