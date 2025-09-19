@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Start a 7-day Pilot — Deflectly</title>
+  <style>
+    :root { --bg:#0b0c10; --card:#14161a; --text:#e8eaed; --muted:#9aa0a6; --accent:#6ee7b7; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 56px 20px; }
+    .card { background:var(--card); border:1px solid #24262b; border-radius:18px; padding:28px; }
+    h1 { font-size: clamp(28px, 3vw, 40px); margin:0 0 12px; }
+    p.lead { color:var(--muted); margin:0 0 24px; }
+    .tiers { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
+    .tier { background:#0f1115; border:1px solid #23252a; border-radius:16px; padding:18px; display:flex; flex-direction:column; }
+    .tier h3 { margin:0 0 8px; font-size:20px; }
+    .price { color:var(--muted); margin-bottom:16px; }
+    .btn { display:inline-block; text-align:center; padding:12px 14px; border-radius:12px; border:1px solid #2b2d33; background:#111317; color:#fff; text-decoration:none; font-weight:600; }
+    .btn:hover { border-color:#3b3f46; transform: translateY(-1px); }
+    .btn-ghost { background:transparent; }
+    .fine { margin-top: 18px; color:var(--muted); font-size:14px; }
+    .qa { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-top:22px; }
+    code { background:#0f1115; border:1px solid #23252a; padding:2px 6px; border-radius:6px; }
+    @media (max-width:900px){ .tiers{ grid-template-columns:1fr; } .qa{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-labelledby="pilot-title">
+      <h1 id="pilot-title">Start your 7-day pilot (no meeting)</h1>
+      <p class="lead">Pay £0 today. On day 8, continue on your chosen plan or cancel—no lock-in. After checkout you’ll be redirected to our intake form to capture policies and links.</p>
+
+      <div class="tiers" role="list">
+        <article class="tier" role="listitem" data-plan="starter">
+          <h3>Starter</h3>
+          <div class="price">£349/mo • 300 AI resolutions</div>
+          <a class="btn" target="_blank" rel="noopener" href="https://buy.stripe.com/cNicMX8mF1nncrc4Bfebu00" aria-label="Start 7-day pilot on Starter">Start pilot →</a>
+          <a class="btn btn-ghost fine" target="_blank" rel="noopener" href="https://tally.so/r/3Epe52?plan=starter">Or go straight to intake</a>
+        </article>
+
+        <article class="tier" role="listitem" data-plan="pro">
+          <h3>Pro</h3>
+          <div class="price">£799/mo • 1,200 AI resolutions</div>
+          <a class="btn" target="_blank" rel="noopener" href="https://buy.stripe.com/bJedR1byRfed8aWd7Lebu01" aria-label="Start 7-day pilot on Pro">Start pilot →</a>
+          <a class="btn btn-ghost fine" target="_blank" rel="noopener" href="https://tally.so/r/3Epe52?plan=pro">Or go straight to intake</a>
+        </article>
+
+        <article class="tier" role="listitem" data-plan="scale">
+          <h3>Scale</h3>
+          <div class="price">£1,999/mo • 4,000 AI resolutions</div>
+          <a class="btn" target="_blank" rel="noopener" href="https://buy.stripe.com/4gMaEPbyR8PP2QCd7Lebu02" aria-label="Start 7-day pilot on Scale">Start pilot →</a>
+          <a class="btn btn-ghost fine" target="_blank" rel="noopener" href="https://tally.so/r/3Epe52?plan=scale">Or go straight to intake</a>
+        </article>
+      </div>
+
+      <div class="qa">
+        <div>
+          <strong>What happens next?</strong>
+          <p class="fine">You’ll land on our Tally intake. We create your client folder, draft your 10-article KB, and start in assist-only for 24–48 hours before enabling auto-answers.</p>
+        </div>
+        <div>
+          <strong>Cancel anytime</strong>
+          <p class="fine">Pilots convert on day 8 unless canceled. We’ll email a Day-6 summary and a one-click <em>Continue on Pro</em> link.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
